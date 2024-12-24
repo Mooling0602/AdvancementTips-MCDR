@@ -1,0 +1,15 @@
+{
+	"id": "advancement_tips",
+	"version": "0.1.0",
+	"name": "AdvancementTips",
+	"description": {
+		"en_us": "Show tips about advancement event by your language in console.",
+		"zh_cn": "在控制台以您的语言显示成就事件相关的提示。"
+	},
+	"dependencies": {
+		"mcdreforged": ">=2.14.0",
+        "mg_events": ">=0.2.0"
+	},
+	"author": "Mooling0602",
+    "link": "https://github.com/Mooling0602/MoreGameEvents-MCDR"
+}
