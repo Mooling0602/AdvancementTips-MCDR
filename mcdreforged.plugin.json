@@ -1,6 +1,6 @@
 {
 	"id": "advancement_tips",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"name": "AdvancementTips",
 	"description": {
 		"en_us": "Show tips about advancement event by your language in console.",

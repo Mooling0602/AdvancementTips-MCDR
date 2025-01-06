@@ -65,7 +65,7 @@ def on_load(server: PluginServerInterface, prev_module):
         server.unload_plugin(plgSelf.id)
 
 def on_player_advancement(server, player, event, content):
-    from mg_events.config import lang # type: ignore
+    import mg_events.data as data # type: ignore
     if tr_langRegion != content.lang:
         psi.logger.info("detected advancement message.")
         raw = tr_lang.get(event, None)
@@ -73,8 +73,8 @@ def on_player_advancement(server, player, event, content):
         tip = raw
         for replacement in replacements:
             tip = tip.replace('%s', str(replacement), 1)
-        if lang is not None:
-            for key, value in lang.items():
+        if data.lang is not None:
+            for key, value in data.lang.items():
                 if value == content.advancement.replace('[', '').replace(']', ''):
                     content_key = key
         else:
